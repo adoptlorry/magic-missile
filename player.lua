@@ -19,6 +19,6 @@ function player:draw(lg)
     b:draw(lg)
   end
 end
-function player:fire(x, y)
-  table.insert(self.bullets, bullet:init(x, y, angle))
+function player:fire()
+  table.insert(self.bullets, bullet:init(self.x + self.width / 2, self.y, angle))
 end

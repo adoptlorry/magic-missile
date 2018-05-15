@@ -20,6 +20,6 @@ function love.draw()
 end
 function love.mousepressed(x, y, button)
   if button == 1 then
-		player:fire(x, y)
+		player:fire()
 	end
 end
